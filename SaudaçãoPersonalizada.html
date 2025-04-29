@@ -1,0 +1,36 @@
+<html>
+<body>
+
+  <h1 id="saudacao">Olá, Bem-vindo!</h1>
+
+  <script>
+    let nome = prompt("Qual é o seu nome?");
+    let saudacao = "";
+
+    let agora = new Date();
+    let hora = agora.getHours();
+
+
+    if (hora >= 6 && hora < 12) {
+      saudacao = "Bom dia";
+    } else if (hora >= 12 && hora < 18) {
+      saudacao = "Boa tarde";
+    } else {
+      saudacao = "Boa noite";
+    }
+
+    let horaFormatada = hora.toString().padStart(2, '0');
+
+    if (nome) {
+      document.getElementById("saudacao").textContent =
+        `Olá! ${saudacao} ${nome}, agora são ${horaFormatada} horas.`;
+    }
+  </script>
+
+</body>
+</html>
+
+<!-- Em resumo, foi utilizado novamente questões utilizadas em aulas anteriores
+ com exceção da variavel - Date (aonde essa variavel busca o horario atualizado
+ e apresenta o mesmo junto a uma saudação) utilizei "IF/ELSE IF/ ELSE" para definir 
+ um horario e apresentar uma mensagem de acordo com o mesmo sugerido. -->
