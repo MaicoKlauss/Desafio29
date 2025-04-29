@@ -1,0 +1,31 @@
+<head>
+    <title>Contador de Cliques</title>
+    </head>
+    <body>
+    
+    <h1>CONTADOR DE CLIQUES</h1>
+    
+    <div id="contador">0</div> 
+    <button onclick="incrementar()">Clique Aqui</button>
+    <button onclick="resetar()">Resetar</button>
+    
+    <script>
+    let contador = 0;
+    
+    function incrementar() {
+    contador++;
+    document.getElementById('contador').textContent = contador;
+    }
+    
+    function resetar() {
+    contador = 0;
+    document.getElementById('contador').textContent = contador;
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+    <!-- Foi apenas copiado funções das atividades antigas realizadas;
+    Fiz uma consulta também de verificação de erro na estruturação 
+    do meu código utilizando Chat GPT, mas no final de tudo apenas! -->
