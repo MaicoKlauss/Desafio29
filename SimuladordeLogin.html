@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+  <title>Simulador de Login</title>
+
+</head>
+<body>
+
+  <h1>LOGIN</h1>
+
+  <input type="text" id="usuario" placeholder="Usuário"><br>
+  <input type="password" id="senha" placeholder="Senha"><br>
+  <button onclick="fazerLogin()">Entrar</button>
+
+  <div id="mensagem"></div>
+
+  <script>
+    function fazerLogin() {
+      const usuario = document.getElementById("usuario").value;
+      const senha = document.getElementById("senha").value;
+
+    
+      const usuarioCorreto = "sexta feira";
+      const senhaCorreta = "1234";
+
+      if (usuario === usuarioCorreto && senha === senhaCorreta) {
+        document.getElementById("mensagem").textContent = "Login bem-sucedido! Bem-vindo, " + usuario + ".";
+        
+      } else {
+        document.getElementById("mensagem").textContent = "Usuário ou senha incorretos.";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+<!-- Utilizei a atividade pratica de *VALIDAÇÃO DE FORMULARIO* e ficou muito simples
+ apenas acresentei uma VARIAVEL <const> login e <const> senha. -->
+
+    <!-- LOGIN: sexta feira (minusculo e com espaço entre as palavras)-->
+    <!-- SENHA: 1234 --> 
